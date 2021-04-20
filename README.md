@@ -1,5 +1,7 @@
 # Real-Time Spark Streaming Application
 
+
+
 ## Technical Details
 
 ### Spark: 
@@ -41,6 +43,7 @@ spark-submit2 --master local[*] --packages org.apache.spark:spark-sql-kafka-0-10
 
 
 
+
 ## Batch 2: 
 
 ### Input Messages
@@ -55,3 +58,17 @@ spark-submit2 --master local[*] --packages org.apache.spark:spark-sql-kafka-0-10
 
 ### Output: 
    Check the output file 2 in the repository
+   
+   
+   
+ # App Details : 
+ 
+ 1. Class: com.enbd.assesment.loanacc.core.LoanAccApp
+  This is the working application which is used to call in the spark-submit, covers most of the requiremnts.
+  
+ 2. Class: com.enbd.assesment.loanacc.core.LoanAccApp2
+  - This application is an attempt to achieve aggregation of streams with differnt groupBy (One - AccountType unbounded output and another - window)
+  - This was not completely successful as i started getting the error -------->  "Multiple streaming aggregations are not supported with streaming DataFrames/Datasets"
+  - However, this app covers Watermarking, Handling Late data and maintain running total which is also desired.
+  
+

@@ -39,7 +39,7 @@ spark-submit2 --master local[*] --packages org.apache.spark:spark-sql-kafka-0-10
         {"AccountId": 8,"AccountType": 2}
 
 ### Output: 
-   Check the output file 1 in the repository
+   Check the Output1.png file for screen shot of the testing result attached in the repository
 
 
 
@@ -57,8 +57,7 @@ spark-submit2 --master local[*] --packages org.apache.spark:spark-sql-kafka-0-10
         {"AccountId": 7,"AccountType": 2}
 
 ### Output: 
-   Check the output file 2 in the repository
-   
+Check the Output2.png file for screen shot of the testing result attached in the repository   
    
    
  # App Details : 
